@@ -3,16 +3,16 @@ let obj = {
 };
 
 function myBind(func, context) {
-  return function(args) {
-    return func.call(context, args);
+  return function() {
+    return func.call(context, ...arguments);
   }
   // return (...args) => func.call(context, args);
 }
 
 function sayName(str) {
-  console.log(this.name + str);
+  console.log(`${this.name} ${str}`);
 }
 
 let newFunc = myBind(sayName, obj);
 
-newFunc(' is here.');
+newFunc('is here.');

@@ -2,17 +2,26 @@ let obj = {
   name: 'Teal',
 };
 
-function myBind(func, context, firstArg) {
-  return function(secondArg) {
-    return func.call(context, firstArg, secondArg);
-  }
-  // return (...args) => func.call(context, args);
+function myBind(func, context) {
+  let firstArgs = ([...arguments].slice(2));
+  // return function() {
+  //   let secondArgs = ([...arguments].slice(0));
+  //   return func.call(context, ...firstArgs, ...secondArgs);
+  // }
+  // return (...args) => func.call(context, ...firstArgs, ...args);
+  return (...args) => func.call(context, ...firstArgs, ...args);
 }
 
-function sayName(str1, str2) {
-  console.log(this.name + str1 + str2);
+// function myBind(func, context, ...args) {
+//   return function() {
+//     func.call(context, ...args, ...arguments);
+//   }
+// }
+
+function sayName(...str) {
+  console.log(`${this.name} ${[...str].join(' ')}`);
 }
 
-let newFunc = myBind(sayName, obj, firstArg);
+let newFunc = myBind(sayName, obj, 'says', 'the');
 
-newFunc(' Hooray!');
+newFunc('Hooray!', 'Hi!');
