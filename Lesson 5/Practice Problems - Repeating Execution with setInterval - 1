@@ -1,0 +1,10 @@
+function startCounting() {
+  let i = 1;
+  
+  let id = setInterval(() => {
+    console.log(i);
+    i += 1;
+  }, 1000);
+}
+
+startCounting();
