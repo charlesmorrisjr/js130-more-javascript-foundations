@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1673046726860" clover="3.2.0">
+  <project timestamp="1673046726861" name="All files">
+    <metrics statements="15" coveredstatements="15" conditionals="5" coveredconditionals="5" methods="17" coveredmethods="17" elements="37" coveredelements="37" complexity="0" loc="15" ncloc="15" packages="1" files="1" classes="1"/>
+    <file name="custom-set.js" path="C:\Users\Greenlight\Documents\Launch School\js130-more-javascript-foundations\javascript_challenges\custom-set.js">
+      <metrics statements="15" coveredstatements="15" conditionals="5" coveredconditionals="5" methods="17" coveredmethods="17"/>
+      <line num="2" count="136" type="stmt"/>
+      <line num="7" count="95" type="stmt"/>
+      <line num="11" count="2" type="stmt"/>
+      <line num="15" count="58" type="stmt"/>
+      <line num="19" count="9" type="stmt"/>
+      <line num="23" count="5" type="stmt"/>
+      <line num="27" count="21" type="cond" truecount="2" falsecount="0"/>
+      <line num="28" count="27" type="stmt"/>
+      <line num="32" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="33" count="2" type="stmt"/>
+      <line num="36" count="3" type="stmt"/>
+      <line num="40" count="11" type="stmt"/>
+      <line num="44" count="7" type="stmt"/>
+      <line num="48" count="4" type="stmt"/>
+      <line num="52" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
